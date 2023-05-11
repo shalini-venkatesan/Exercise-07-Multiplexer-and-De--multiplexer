@@ -47,42 +47,80 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-/* write all the steps invloved */
+
+1.Start the module using module projname().
+
+2.Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+
+3.Use wire to assign intermediate outputs.
+
+4.Use and,or and not gates to get the desired output.
+
+5.End the module.
+
+6.Generate RTL realization and timing diagrams.
 
 
 
 ### PROGRAM 
-/*
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: SHALINI V 
+RegisterNumber: 212222240096
+
+**Multiplexer**
+module mul(d0,d1,d2,d3,a,b,q);
+input d0,d1,d2,d3,a,b;
+output q;
+wire l,m,n,o,abar,bbar;
+not(abar,a);
+not(bbar,b);
+and(l,d0,abar,bbar);
+and(m,d1,abar,b);
+and(n,d2,a,bbar);
+and(o,d3,a,b);
+or(q,l,m,n,o);
+endmodule
+
+**Demultiplexer**
+module demul(d,a,b,y0,y1,y2,y3);
+input d,a,b;
+output y0,y1,y2,y3;
+wire abar,bbar;
+not(abar,a);
+not(bbar,b);
+and(y0,d,abar,bbar);
+and(y1,abar,b,d);
+and(y2,a,bbar,d);
+and(y3,a,b,d);
+endmodule
+
+
+```
 
 
 
 
 
 
-### RTL LOGIC  
-
-
-
-
-
-
-
+### RTL LOGIC 
+**Multiplexer**
+![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/ad77d311-e41e-4f13-95c9-a3b91e0f3b89)
+**Demultiplexer**
+![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/385ab1fc-5192-460a-a3e1-c350576ebed4)
 
 ### TIMING DIGRAMS  
-
-
-
-
+**Multiplexer**
+![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/b1ea3a79-6490-422f-8658-85e8e3f73302)
+**Demultiplexer**
+![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/cecc78ca-0b3b-411b-a268-3290e3b8dc77)
 
 ### TRUTH TABLE 
+**Multiplexer**
+![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/06dca71b-ba4a-433b-99e1-39eb038664bf)
+**Demultiplexer**
+![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/5be6457d-4d14-49f1-a0c5-e0b55e81de15)
 
+### RESULTS
+Hence 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
 
-
-
-
-
-### RESULTS 
