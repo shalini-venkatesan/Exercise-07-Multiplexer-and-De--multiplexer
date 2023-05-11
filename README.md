@@ -12,13 +12,17 @@ The multiplexer is a device that has multiple inputs and single line output. The
 
 The single-pole multi-position switch is a simple example of a non-electronic circuit of the multiplexer, and it is widely used in many electronic circuits. The multiplexer is used to perform high-speed switching and is constructed by electronic components.
 
+
 ![image](https://user-images.githubusercontent.com/36288975/170912485-73c395c7-23c0-4e78-a53d-a2f0d07d9662.png)
+
           Figure-01 multiplexer block diagram 
 
 Multiplexers are capable of handling both analog and digital applications. In analog applications, multiplexers are made up of relays and transistor switches, whereas in digital applications, the multiplexers are built from standard logic gates. When the multiplexer is used for digital applications, it is called a digital multiplexer.
 
 4-to-1 Multiplexer
 The 4X1 multiplexer comprises 4-input bits, 1- output bit, and 2- control bits. The four input bits are namely 0, D1, D2, and D3, respectively; only one of the input bits is transmitted to the output. The o/p ‘q’ depends on the value of control input AB. The control bit AB decides which of the i/p data bit should transmit the output. The following figure shows the 4X1 multiplexer circuit diagram using AND gates. For example, when the control bits AB =00, then the higher AND gates are allowed while remaining AND gates are restricted. Thus, data input D0 is transmitted to the output ‘q”
+
+
 ![image](https://user-images.githubusercontent.com/36288975/170912568-3598c60a-5035-41f3-b0c4-ccedba13aca5.png)
 
 
@@ -28,10 +32,14 @@ If the control input is changed to 11, then all gates are restricted except the 
 
 ## What is Demultiplexer?
 De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
+
 ![image](https://user-images.githubusercontent.com/36288975/170912606-a30e4b74-1726-4430-b245-2c3c3d9c232d.png)
+
 Figure 3 De-multiplexer 
 1-4 Demultiplexer
-The 1-to-4 demultiplexer comprises 1- input bit, 4-output bits, and control bits. The 1X4 demultiplexer circuit diagram is shown below.![image](https://user-images.githubusercontent.com/36288975/170912683-00fb746a-1d45-4023-91d1-3a70b841073c.png)
+The 1-to-4 demultiplexer comprises 1- input bit, 4-output bits, and control bits. The 1X4 demultiplexer circuit diagram is shown below.
+
+![image](https://user-images.githubusercontent.com/36288975/170912683-00fb746a-1d45-4023-91d1-3a70b841073c.png)
 
 ![image](https://user-images.githubusercontent.com/36288975/170912741-7cbd52af-7e0d-4be3-b5c6-6fb9c4eca7c9.png)
 
@@ -111,14 +119,21 @@ endmodule
 
 ### TIMING DIGRAMS  
 **Multiplexer**
+
 ![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/b1ea3a79-6490-422f-8658-85e8e3f73302)
+
 **Demultiplexer**
+
 ![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/cecc78ca-0b3b-411b-a268-3290e3b8dc77)
 
 ### TRUTH TABLE 
+
 **Multiplexer**
+
 ![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/06dca71b-ba4a-433b-99e1-39eb038664bf)
+
 **Demultiplexer**
+
 ![image](https://github.com/shalini-venkatesan/Exercise-07-Multiplexer-and-De--multiplexer/assets/118720291/5be6457d-4d14-49f1-a0c5-e0b55e81de15)
 
 ### RESULTS
